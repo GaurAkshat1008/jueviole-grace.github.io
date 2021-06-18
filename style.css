@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    overflow: hidden;
+}
+body{
+    font-family: Satisfy, sans-serif;
+    background-image: url("https://images.pexels.com/photos/139312/pexels-photo-139312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=500");
+
+ 
+}
+.text{
+    font-size: 3.5rem;
+    color: rgb(180, 13, 97);
+    font-family: Satisfy;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    top: 50%;    
+}
+
+
+.first__right{
+    cursor: pointer;      
+    display: flex;
+    flex: 1;
+    margin: 50px;
+}
+.container__first{
+    display: flex;
+    transition: width 2s;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: white;
+    width: 900px;
+    height: 600px;
+    z-index: 100;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+
+.container__second{
+    display: none;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    width: 900px;
+    z-index: 1;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+.container__third{
+    display: none;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: white;
+    width: 900px;
+    z-index: 1;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+.container__fourth{
+    display: none;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: white;
+    width: 900px;
+    z-index: 1;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+.container__fifth{
+    display: none;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: white;
+    width: 900px;
+    z-index: 1;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+.container__sixth{
+    display: none;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: white;
+    width: 900px;
+    z-index: 1;
+    height: 600px;
+    position: relative;
+    border-radius: 50px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsSOXmigUgK2dIQun70aeN3HbcbvOe8EigA&usqp=CAU");
+}
+.hover-img {
+    background-color: #ffcfdf;
+background-image: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 900px;
+    min-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+  .hover-img:before,
+  .hover-img:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 32px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(10);
+  }
+  
+  .hover-img img {
+    max-width: 100%;
+  }
+  
+  .hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .hover-img:hover:before,
+  .hover-img:hover:after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .hover-img:hover > img {
+    opacity: 0.9;
+  }
+  
+  .hover-img:hover figcaption {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
